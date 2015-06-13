@@ -136,15 +136,16 @@ Note:  I am assuming that you have installed **node**, **gulp** and
     **************
     
 12.  Now look in the **vendor/bower_components** folder.  There should be
-	 a new folder called **bootswatch-sass**.  Notice that you now have all the
+	 a new folder called **bootswatch-sass**.  Notice that you have all the
 	 bootswatch themes under the **bootswatch-sass** folder.
 	 
 	 **************
 	 
 13. View the **bower.json** file to see the new dependencies that have been added.
 
-
-14. By default Laravel 5 uses less, so the file **gulpfile.js** should look like
+    **************
+    
+14. By default Laravel 5.1 uses less, so the file **gulpfile.js** should look like
     the code below:
     ```
     elixir(function(mix) {
@@ -152,34 +153,65 @@ Note:  I am assuming that you have installed **node**, **gulp** and
     });
     ```
     
-15. Now delete the folder **resources/less/boostrap** (that comes with the default installation of Laravel 5)
- 	 We will not use this folder.
+    **************
+    
+15. Rename the code in the **gulpfile.js** as shown below:
+    ```
+    elixir(function(mix) {
+        mix.sass('app.scss');
+    });
+    ```
+    
+    
+16. Rename the folder **resources/assets/less** (that comes with the default installation of Laravel 5.1)
+    to **resources/assets/sass**.
+    
+    **************
+    
+17. Rename the file **resources/assets/sass/app.less** (that comes with the default installation of Laravel 5.1)
+    to **resources/assets/sass/app.scss**.
 
-16. Delete the contents of the file **resources/less/app.less**.  This file should now
- 	 be empty.
+    **************
+    
+18. Delete the contents of the file **resources/assets/sass/app.scss**.  This file should now
+ 	be empty.
 
-17. Add a simple CSS class to the file **resources/assets/less/app.less**. 
+    **************
+    
+19. Add a simple CSS class to the file **resources/assets/sass/app.scss**. 
     In this case a CSS class called **.flash**.  You can thank Jeffrey Way for this class.
     ```
     .flash {
         background: #f66422;
     } 
     ```
+    
+    **************
 
-18. In the **public** folder delete the folder **css** (this folder has a **app.css** file that you will
-    also delete)
+
+20. Look In the **public** folder. Currently there is NO folder called **css**.  When we compile
+    the **app.scss** file into a css file, a new folder called **public/css** will be created.
+
+    **************
 
 
-19. Now let's compile the new **app.less** file into a css file.  In the root directory of the Laravel 5
+21. Now let's compile the new **app.scss** file into a css file.  In the root directory of the Laravel 5
  	application type the following at the command prompt:
     ```
  	gulp
     ```
     
-20.  Your **public** folder should now contain the complied **app.css** file inside
-     a folder called css.  Yippee....... this worked!
+    **************
+     
+22.  Your **public** folder should now contain the complied **app.css** file inside
+     a folder called **css**.  Yippee....... this worked!
 
-21.  The next step is to expand the **gulpfile.js** to include Bootstrap, Bootswatch and
+    **************
+    
+    
+    
+    
+23.  The next step is to expand the **gulpfile.js** to include Bootstrap, Bootswatch and
      jQuery.  This is the new **gulpfile.js** file.
      Note:  Many thanks to **raygun** from Laracasts who created the original **gulpfile.js** file.
             I could not get the correct result WITHOUT raygun's **gulpfile.js** file.

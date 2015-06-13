@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.scss"],"names":[],"mappings":"AACA;EACE,qBAAoB,EADd","file":"app.css","sourcesContent":["\n.flash {\n  background: #f66422;\n}\n\n"],"sourceRoot":"/source/"}
