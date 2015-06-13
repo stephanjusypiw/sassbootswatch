@@ -27,10 +27,14 @@ Note:  I am assuming that you have installed **node**, **gulp** and
 	sudo npm install
     ```
    (Note:  type **npm -v** to find the current version of current version of node)
+   
+   **************
  
 2.  If you look at your Laravel 5.1 directory structure, you will now see a new folder under
  	the root folder called **node_modules**.  Will see a hidden **.bin**, **gulp** and **laravel-elixir**
  	folder.
+ 	
+ 	**************
 
 3.  Check to see if gulp is installed in the root folder of your application
     by typing the following at the command prompt: 
@@ -46,12 +50,16 @@ Note:  I am assuming that you have installed **node**, **gulp** and
 	[07:45:14] Local version 3.9.0
 	```
 	
+	**************
+	
 4.  If gulp is not installed type the following at the command prompt:
 	```	
 	npm install --global gulp
 	or
 	sudo install --global gulp
 	```
+	
+	**************
 	
 5. Now there are a couple of ways to install **bootstrap-sass**. I’ve decided to use bower since 
    it’s fairly easy.
@@ -64,6 +72,8 @@ Note:  I am assuming that you have installed **node**, **gulp** and
    npm install -g bower
    ```
    
+   **************
+   
 6. In the root folder of your application initialise bower with the following at the command prompt:
    ```
    bower init
@@ -71,6 +81,8 @@ Note:  I am assuming that you have installed **node**, **gulp** and
    Answer the questions the best you can.  
    A new **bower.json** will be created in root folder of your application.  
    You can edit the **bower.json** file later if you wish.
+   
+   **************
 
 7. Create a **.bowerrc** at the root of your project and put the following code in the **.bowerc** file:
 	```
@@ -80,8 +92,10 @@ Note:  I am assuming that you have installed **node**, **gulp** and
 	```
     With that code, we specify where all our libraries will be stored.  In this 
     case **vendor/bower_components**.
-
-8.  Let's now install bootstrap-sass. In the root folder of your application type the 
+    
+    **************
+    
+8.  Let's now install **bootstrap-sass-official**. In the root folder of your application type the 
     following at the command prompt to search for bootstrap-sass:
     ```
 	bower search bootstrap-sass
@@ -103,34 +117,30 @@ Note:  I am assuming that you have installed **node**, **gulp** and
 	
 	**************
 	
-10.  Next I installed bootstrap.  I only installed bootstrap for the jQuery dependency.
-     In the root of your application type the following at the command prompt:
+10.  Let's now install **bootswatch-sass**. In the root of your application type the following 
+     at the command prompt to see a list of **bootswatch-sass** options.
     ```
-    bower install bootstrap-bootstrap --save
+	bower search bootswatch-sass
     ```
-    
-    This will install bootstrap with jQuery. 
-
-	Now look in the **vendor/bower_components** folder.  There should be
-	3 new folders called **bootstrap-sass-official**, **bootstrap** and **jquery**.
 	
-11. 
-
-10. In the root of your application type the following at the command prompt:
-    ```
-	bower search bootswatch
-    ```
-	To see a list of bootswatch options.
-
-
-11. In the root of your application type the following at the command prompt:
+    **************
+    
+11. Install **bootswatch-sass** in the root of your application. 
+    Type the following at the command prompt:
 	```	
-	bower install bootswatch --save
+	bower install bootswatch-sass --save
     ```
 
+    If you are prompted, select the latest version of **bootstrap-sass-official**
+    
+    **************
+    
 12.  Now look in the **vendor/bower_components** folder.  There should be
-	 a new folder called **bootswatch**.
-
+	 a new folder called **bootswatch-sass**.  Notice that you now have all the
+	 bootswatch themes under the **bootswatch-sass** folder.
+	 
+	 **************
+	 
 13. View the **bower.json** file to see the new dependencies that have been added.
 
 
