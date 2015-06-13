@@ -20,7 +20,7 @@ Note:  I am assuming that you have installed **node**, **gulp** and
 	npm install
     ```
 	Note : The command **npm install** 
-    is used in order to install gulp and laravel-elixir locally
+    is used in order to install **gulp** and **laravel-elixir** locally.
 
 	If you get an error message in OSX try typing the following at the command prompt:
 	```
@@ -28,15 +28,17 @@ Note:  I am assuming that you have installed **node**, **gulp** and
     ```
    (Note:  type **npm -v** to find the current version of current version of node)
  
-2.  If you look at your Laravel 5 directory structure, you will now see a new folder under
- 	the root folder called **node_modules**.
+2.  If you look at your Laravel 5.1 directory structure, you will now see a new folder under
+ 	the root folder called **node_modules**.  Will see a hidden **.bin**, **gulp** and **laravel-elixir**
+ 	folder.
 
-3.  Check to see if gulp is installed by typing the following at the command prompt: 
+3.  Check to see if gulp is installed in the root folder of your application
+    by typing the following at the command prompt: 
+    
     ```
 	gulp -v
 	```
-	in the root folder of your application
-
+	
     In my case the output is:
 	```
 	-> gulp -v
@@ -51,12 +53,13 @@ Note:  I am assuming that you have installed **node**, **gulp** and
 	sudo install --global gulp
 	```
 	
-5. Now there are a couple of ways to install Bootstrap. I’ve decided to use bower since it’s fairly easy.
+5. Now there are a couple of ways to install **bootstrap-sass**. I’ve decided to use bower since 
+   it’s fairly easy.
    To see if bower is installed type the following at the command prompt:
    ```
    	bower -v
    ```
-   If bower is not installed on your system type the following at the command prompt:
+   If bower is not installed on your system, type the following at the command prompt:
    ```
    npm install -g bower
    ```
@@ -65,8 +68,9 @@ Note:  I am assuming that you have installed **node**, **gulp** and
    ```
    bower init
    ```
-   Answer the questions the best you can.  A new **bower.json** will be created in root folder
-   of your application.  You can edit the **bower.json** file later if you wish.
+   Answer the questions the best you can.  
+   A new **bower.json** will be created in root folder of your application.  
+   You can edit the **bower.json** file later if you wish.
 
 7. Create a **.bowerrc** at the root of your project and put the following code in the **.bowerc** file:
 	```
@@ -74,22 +78,28 @@ Note:  I am assuming that you have installed **node**, **gulp** and
 		"directory": "vendor/bower_components"
 	}
 	```
-    With that code, we specify that all our libraries will be stored in **vendor/bower_components**.
+    With that code, we specify where all our libraries will be stored.  In this 
+    case **vendor/bower_components**.
 
-8.  Let's now install bootstrap-sass. In the root folder of your application type the following at the command prompt:
+8.  Let's now install bootstrap-sass. In the root folder of your application type the 
+    following at the command prompt to search for bootstrap-sass:
     ```
 	bower search bootstrap-sass
 	```
 	You will see the list of bootstrap-sass options.
 
-9.  In the root of your application type the following at the command prompt:
+9.  In the root of your application type the following at the command prompt to retrieve
+    bootstrap-sass:
     ```
 	bower install bootstrap-sass-official --save
     ```
 	This will install bootstrap-sass-official. 
+	Now look in the **vendor/bower_components** folder.  There should be
+    2 new folders called **bootstrap-sass-official** and **jquery**.  This means we
+    don't need to look for the jquery library since it comes with **bootstrap-sass-official**.
 	
 	
-	 bower install jquery#v3.3.4 --save
+	**************
 	
 10.  Next I installed bootstrap.  I only installed bootstrap for the jQuery dependency.
      In the root of your application type the following at the command prompt:

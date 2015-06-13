@@ -1,0 +1,20 @@
+{
+  "name": "sassbootswatch",
+  "version": "1.0.0",
+  "homepage": "https://github.com/stephanjusypiw/sassbootswatch",
+  "authors": [
+    "Stephan Jusypiw <stephanj@internode.on.net>"
+  ],
+  "description": "Using SASS with Bootstrap-SASS and Elixir",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.4"
+  }
+}
