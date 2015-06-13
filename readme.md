@@ -88,6 +88,8 @@ Note:  I am assuming that you have installed **node**, **gulp** and
 	```
 	You will see the list of bootstrap-sass options.
 
+    **************
+    
 9.  In the root of your application type the following at the command prompt to retrieve
     bootstrap-sass:
     ```
