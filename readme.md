@@ -12,7 +12,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ### Tutorial on how to use Laravel 5 and Elixir SASS with Bootswatch
 
-Note:  I am assuming that you have installed node, gulp and bower on your dev machine
+Note:  I am assuming that you have installed **node**, **gulp** and 
+       **bower** on your development machine.
 
 1. In the root directory of your Laravel 5 application type the following at the command prompt: 
 	```
