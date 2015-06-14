@@ -318,6 +318,7 @@ Note:  I am assuming that you have installed **node**, **gulp** and
      
 26.  In the **resources/assests/app.scss** file add the imports for **bootstrap** and
      **bootswatch**.
+     The order of the imports is REALLY IMPORTANT otherwise the **bootswatch** them won't work.
 	
 	```
 	// first import bootstrap variable
