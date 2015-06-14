@@ -145,7 +145,7 @@ Note:  I am assuming that you have installed **node**, **gulp** and
 
     **************
     
-14. By default Laravel 5.1 uses less, so the file **gulpfile.js** should look like
+14. By default Laravel 5.1 uses **less**, so the file **gulpfile.js** should look like
     the code below:
     ```
     elixir(function(mix) {
