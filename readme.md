@@ -31,8 +31,8 @@ Note:  I am assuming that you have installed **node**, **gulp** and
    **************
  
 2.  If you look at your Laravel 5.1 directory structure, you will now see a new folder under
- 	the root folder called **node_modules**.  Will see a hidden **.bin**, **gulp** and **laravel-elixir**
- 	folder.
+ 	the root folder called **node_modules**.  You will see a hidden **.bin**, **gulp** and **laravel-elixir**
+ 	folders.
  	
  	**************
 
