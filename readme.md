@@ -36,7 +36,7 @@ Note:  I am assuming that you have installed **node**, **gulp** and
  	
  	**************
 
-3.  Check to see if gulp is installed in the root folder of your application
+3.  Check to see if **gulp** is installed in the root folder of your application
     by typing the following at the command prompt: 
     
     ```
@@ -52,7 +52,7 @@ Note:  I am assuming that you have installed **node**, **gulp** and
 	
 	**************
 	
-4.  If gulp is not installed type the following at the command prompt:
+4.  If **gulp** is not installed type the following at the command prompt:
 	```	
 	npm install --global gulp
 	or
@@ -61,13 +61,13 @@ Note:  I am assuming that you have installed **node**, **gulp** and
 	
 	**************
 	
-5. Now there are a couple of ways to install **bootstrap-sass**. I’ve decided to use bower since 
+5. Now there are a couple of ways to install **bootstrap-sass**. I’ve decided to use **bower** since 
    it’s fairly easy.
-   To see if bower is installed type the following at the command prompt:
+   To see if **bower** is installed type the following at the command prompt:
    ```
    	bower -v
    ```
-   If bower is not installed on your system, type the following at the command prompt:
+   If **bower** is not installed on your system, type the following at the command prompt:
    ```
    npm install -g bower
    ```
@@ -96,7 +96,7 @@ Note:  I am assuming that you have installed **node**, **gulp** and
     **************
     
 8.  Let's now install **bootstrap-sass-official**. In the root folder of your application type the 
-    following at the command prompt to search for bootstrap-sass:
+    following at the command prompt to search for **bootstrap-sass**:
     ```
 	bower search bootstrap-sass
 	```
@@ -105,7 +105,7 @@ Note:  I am assuming that you have installed **node**, **gulp** and
     **************
     
 9.  In the root of your application type the following at the command prompt to retrieve
-    bootstrap-sass:
+    **bootstrap-sass**:
     ```
 	bower install bootstrap-sass-official --save
     ```
