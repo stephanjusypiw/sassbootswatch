@@ -100,7 +100,7 @@ Note:  I am assuming that you have installed **node**, **gulp** and
     ```
 	bower search bootstrap-sass
 	```
-	You will see the list of **bootstrap-sass options**.
+	You will see the list of **bootstrap-sass** options.
 
     **************
     
@@ -109,7 +109,7 @@ Note:  I am assuming that you have installed **node**, **gulp** and
     ```
 	bower install bootstrap-sass-official --save
     ```
-	This will install bootstrap-sass-official. 
+	This will install **bootstrap-sass-official**. 
 	Now look in the **vendor/bower_components** folder.  There should be
     2 new folders called **bootstrap-sass-official** and **jquery**.  This means we
     don't need to look for the jquery library since it comes with **bootstrap-sass-official**.
