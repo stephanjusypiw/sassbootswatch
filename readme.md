@@ -311,7 +311,7 @@ Note:  I am assuming that you have installed **node**, **gulp** and
       	gulp
      ```
          
-     Notice the 2 new folders in ***resources/assets/sass** folder called **bootstrap** 
+     Notice the 2 new folders in **resources/assets/sass** folder called **bootstrap** 
      and **bootswatch**.
      
      **************

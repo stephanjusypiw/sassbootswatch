@@ -30,8 +30,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43269232" vertical-offset="6939" max-vertical-offset="9666">
-              <caret line="267" column="81" selection-start-line="267" selection-start-column="81" selection-end-line="267" selection-end-column="81" />
+            <state vertical-scroll-proportion="0.7355769" vertical-offset="7992" max-vertical-offset="9666">
+              <caret line="313" column="35" selection-start-line="313" selection-start-column="35" selection-end-line="313" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -403,8 +403,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43269232" vertical-offset="6939" max-vertical-offset="9666">
-          <caret line="267" column="81" selection-start-line="267" selection-start-column="81" selection-end-line="267" selection-end-column="81" />
+        <state vertical-scroll-proportion="0.7355769" vertical-offset="7992" max-vertical-offset="9666">
+          <caret line="313" column="35" selection-start-line="313" selection-start-column="35" selection-end-line="313" selection-end-column="35" />
           <folding />
         </state>
       </provider>
