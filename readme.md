@@ -168,7 +168,7 @@ Note:  I am assuming that you have installed **node**, **gulp** and
     
     **************
     
-17. Rename the file **resources/assets/sass/app.less** (that comes with the default installation of Laravel 5.1)
+17. Rename the file **resources/assets/less/app.less** (that comes with the default installation of Laravel 5.1)
     to **resources/assets/sass/app.scss**.
 
     **************
