@@ -100,7 +100,7 @@ Note:  I am assuming that you have installed **node**, **gulp** and
     ```
 	bower search bootstrap-sass
 	```
-	You will see the list of bootstrap-sass options.
+	You will see the list of **bootstrap-sass options**.
 
     **************
     
