@@ -265,7 +265,7 @@ Note:  I am assuming that you have installed **node**, **gulp** and
 	
      **************
     
-24.  The next step is to expand the **gulpfile.js** to include **bootstrap**, **Bootswatch** and
+24.  The next step is to expand the **gulpfile.js** to include **bootstrap**, **bootswatch** and
      **jQuery**.  This is the new **gulpfile.js** file. 
   
      ```
