@@ -350,4 +350,4 @@ Note:  I am assuming that you have installed **node**, **gulp** and
      **************
      
      **NOTE:  DON'T FORGET TO RUN gulp AT THE COMMAND LINE AFTER YOU EDIT THE
-     resources/assests/app.less file!**
+     resources/assests/app.scss file!**
