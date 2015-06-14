@@ -210,7 +210,7 @@ Note:  I am assuming that you have installed **node**, **gulp** and
     
     
 23.  I am assuming that you have created a HomeStead Virtual Machine and
-     configured the necessary files so that you can view your application's home using
+     configured the necessary files so that you can view your application's home page using
      directory using a browser.
 
      Let's replace the default **welcome.blade.php** file with the code below to see
