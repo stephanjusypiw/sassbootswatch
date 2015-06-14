@@ -209,11 +209,13 @@ Note:  I am assuming that you have installed **node**, **gulp** and
     **************
     
     
-23.  I am assuming that you have created a HomeStead Virtual machine and
-     configured the necessary files to that you can view your application via
-     a browser.
-     Let's replace the default welcome.blade.php file with the code below to incorporate
-     **bootstrap** and **bootswatch**.
+23.  I am assuming that you have created a HomeStead Virtual Machine and
+     configured the necessary files so that you can view your application's home using
+     directory using a browser.
+
+     Let's replace the default **welcome.blade.php** file with the code below to see
+     **bootstrap** and **bootswatch** working.  (It won't work at this stage, but we will get
+     there soon)
     
     ```
  
