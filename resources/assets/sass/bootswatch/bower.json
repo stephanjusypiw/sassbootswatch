@@ -1,0 +1,46 @@
+{
+  "name": "bootswatch-sass",
+  "description": "abandoned since Sass is now in official bootswatch",
+  "version": "3.2.0",
+  "author": "Corey Sewell",
+  "homepage": "http://guru-digital.github.io/bootswatch-sass/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guru-digital/bootswatch-sass.git"
+  },
+  "license": "MIT",
+  "ignore": [
+    "2",
+    "api",
+    "assets",
+    "bower_components",
+    "custom",
+    "default",
+    "global",
+    "help",
+    "tests",
+    "_config.yml",
+    ".gitignore",
+    ".travis.yml",
+    "CNAME",
+    "node_modules",
+    "composer.json",
+    "favicon.ico",
+    "Gemfile",
+    "Gruntfile.js",
+    "index.html",
+    "package.json",
+    "*/index.html",
+    "bootswatch/",
+    "*.less",
+    "*.patch"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.2.0"
+  },
+  "devDependencies": {
+    "font-awesome": "~4.0.0",
+    "html5shiv": "~3.7.0",
+    "respond": "~1.4.2"
+  }
+}

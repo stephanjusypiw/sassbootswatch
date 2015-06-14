@@ -215,7 +215,8 @@ Note:  I am assuming that you have installed **node**, **gulp** and
 
      Let's replace the default **welcome.blade.php** file with the code below to see
      **bootstrap** and **bootswatch** working.  (It won't work at this stage, but we will get
-     there soon)
+     there soon).  Notice the call to the CSS file called **css/app.css** and the 
+     Javascript file called **js/app.js**
     
     ```
  
@@ -264,44 +265,89 @@ Note:  I am assuming that you have installed **node**, **gulp** and
 	
      **************
     
-24.  The next step is to expand the **gulpfile.js** to include Bootstrap, Bootswatch and
-     jQuery.  This is the new **gulpfile.js** file.  Notice the call to the CSS file called 
-     **css/app.css** and the Javascript file called **js/app.js**
+24.  The next step is to expand the **gulpfile.js** to include **bootstrap**, **Bootswatch** and
+     **jQuery**.  This is the new **gulpfile.js** file. 
   
-  
-  
-  
-
-
-22.  In the **resources/assests/app.less** file add the imports
-	```
-	@import "bootstrap/bootstrap";
-	@import "cerulean/variables";
-	```
-
-23. Finally, if you want the entire bootswatch themes then change your **gulpfile.js**
-   as show shown below:
-
-
-   Old Code:
-   ```
-        // I will use the cerulean bootswatch theme
-		    ).copy(
-		        'vendor/bower_components/bootswatch/cerulean',
-		        'resources/assets/less/cerulean'
-   ```
-    New Code:
-    ```
-    	     // I will use the entire bootswatch library
-    		).copy(
-        		'vendor/bower_components/bootswatch',
-        		'resources/assets/less/bootswatch'
-    ```
-     Then in your ***resources/assests/app.less*** file add the following if you
-     want, say the cosmo theme.
      ```
-     @import "bootstrap/bootstrap";
-     @import "bootswatch/cosmo/variables";
+     
+     var elixir = require('laravel-elixir');
+     
+     
+     // create variables for paths for bootstrap and bootswatch
+     var bowerDirBootstrap = "vendor/bower_components/bootstrap-sass-official/assets/";
+     var bowerDirBootswatch = "vendor/bower_components/bootswatch-sass";
+     // javascript paths
+     var bowerDirJquery = "vendor/bower_components/jquery/dist/";
+     
+     elixir(function(mix) {
+         mix.sass('app.scss')
+             // copy relevant files to the resources folder.  This is the css
+             .copy(bowerDirBootstrap, 'resources/assets/sass/bootstrap')
+             .copy(bowerDirBootswatch, 'resources/assets/sass/bootswatch')
+             // this is the javascript
+             .copy(bowerDirJquery + 'jquery.js', 'resources/assets/js/jquery.js')
+             .copy(bowerDirBootstrap + 'javascripts/bootstrap.js',
+             'resources/assets/js/bootstrap.js')
+         //
+         // Combine scripts
+         //
+         mix.scripts([
+                 'js/jquery.js',
+                 'js/bootstrap.js'
+             ],
+             'public/js/app.js',
+             'resources/assets'
+         );
+     
+     });
+     
      ```
+     
+     **************
+     
+25.  Compile the new **app.scss** file into a **css** file.  In the root directory of the 
+     Laravel 5.1 application type the following at the command prompt:  
+     ```
+      	gulp
+     ```
+         
+     Notice the 2 new folders in ***resources/assets/sass** folder called **bootstrap** 
+     and **bootswatch**.
+     
+     **************
+     
+26.  In the **resources/assests/app.scss** file add the imports for **bootstrap** and
+     **bootswatch**.
+	
+	```
+	// first import bootstrap variable
+    @import "bootstrap/stylesheets/bootstrap/variables";
+    // second import the COSMO theme variables
+    @import "bootswatch/cosmo/variables";
+    // third import bootstrap
+    @import "bootstrap/stylesheets/bootstrap";
+    // forth import cosmo bootswatch
+    @import "bootswatch/cosmo/bootswatch";
+    
+    .flash {
+      background: #f66422;
+    }
+
+	```
+
+    **************
+
+
+27. In the root directory of the Laravel 5.1 application type the following 
+    at the command prompt: 
+     ```
+     gulp
+     ```
+
+28.  Refresh the home page of your application to see the bootswatch COSMO theme
+     being used on the Navigation Bar.
+     
+     **************
+     
      **NOTE:  DON'T FORGET TO RUN gulp AT THE COMMAND LINE AFTER YOU EDIT THE
      resources/assests/app.less file!**

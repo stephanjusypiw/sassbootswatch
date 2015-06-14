@@ -1,3 +1,12 @@
+// first import bootstrap variable
+@import "bootstrap/stylesheets/bootstrap/variables";
+
+// second import the COSMO theme variables
+@import "bootswatch/cosmo/variables";
+// third import bootstrap
+@import "bootstrap/stylesheets/bootstrap";
+// forth import cosmo bootswatch
+@import "bootswatch/cosmo/bootswatch";
 
 .flash {
   background: #f66422;
