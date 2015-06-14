@@ -188,7 +188,7 @@ Note:  I am assuming that you have installed **node**, **gulp** and
     
     **************
 
-.
+
 20. Look In the **public** folder. Currently there is NO folder called **css**.  When we compile
     the **app.scss** file into a **app.css** file, a new folder called **public/css** will be created.
 
@@ -265,6 +265,9 @@ Note:  I am assuming that you have installed **node**, **gulp** and
 24.  The next step is to expand the **gulpfile.js** to include Bootstrap, Bootswatch and
      jQuery.  This is the new **gulpfile.js** file.  Notice the call to the CSS file called 
      **css/app.css** and the Javascript file called **js/app.js**
+  
+  
+  
   
 
 
