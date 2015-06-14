@@ -188,15 +188,15 @@ Note:  I am assuming that you have installed **node**, **gulp** and
     
     **************
 
-
+.
 20. Look In the **public** folder. Currently there is NO folder called **css**.  When we compile
-    the **app.scss** file into a css file, a new folder called **public/css** will be created.
+    the **app.scss** file into a **app.css** file, a new folder called **public/css** will be created.
 
     **************
 
 
-21. Now let's compile the new **app.scss** file into a css file.  In the root directory of the Laravel 5
- 	application type the following at the command prompt:
+21. Now let's compile the new **app.scss** file into a **css** file.  In the root directory of the 
+    Laravel 5.1 application type the following at the command prompt:  
     ```
  	gulp
     ```
@@ -209,51 +209,64 @@ Note:  I am assuming that you have installed **node**, **gulp** and
     **************
     
     
+23.  I am assuming that you have created a HomeStead Virtual machine and
+     configured the necessary files to that you can view your application via
+     a browser.
+     Let's replace the default welcome.blade.php file with the code below to incorporate
+     **bootstrap** and **bootswatch**.
     
-    
-23.  The next step is to expand the **gulpfile.js** to include Bootstrap, Bootswatch and
-     jQuery.  This is the new **gulpfile.js** file.
-     Note:  Many thanks to **raygun** from Laracasts who created the original **gulpfile.js** file.
-            I could not get the correct result WITHOUT raygun's **gulpfile.js** file.
-
     ```
-    var elixir = require('laravel-elixir');
-    
-    elixir(function(mix){
-        // Copy the files that bower has fetched. Note that gulp tasks run
-        // asynchronously. 
-        mix.copy(
-            'vendor/bower_components/jquery/dist/jquery.js',
-            'resources/assets/js/jquery.js'
-            // I will use the cerulean bootswatch theme
-        ).copy(
-            'vendor/bower_components/bootswatch/cerulean',
-            'resources/assets/less/cerulean'
-        ).copy(
-            'vendor/bower_components/bootstrap/less',
-            'resources/assets/less/bootstrap'
-        ).copy(
-            'vendor/bower_components/bootstrap/dist/js/bootstrap.js',
-            'resources/assets/js/bootstrap.js'
-        ).copy(
-            'vendor/bower_components/bootstrap/dist/fonts',
-            'public/fonts'
-        );
-
-        // Combine scripts
-        mix.scripts([
-                'js/jquery.js',
-                'js/bootstrap.js'
-            ],
-            'public/js/admin.js',
-            'resources/assets'
-        );
-
-        // Compile Less into the public/css folder
-        mix.less('app.less', 'public/css');
-    });
-    
+ 
+       <html>
+       <head>
+           <title>Laravel</title>
+           <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+           <link href="css/app.css" rel="stylesheet" type="text/css">
+       </head>
+       <body>
+       <nav class="navbar navbar-default">
+           <div class="container-fluid">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                       <span class="sr-only">Toggle navigation</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </button>
+                   <a class="navbar-brand" href="#">SASS with Bootswatch - 2015</a>
+               </div>
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                   <ul class="nav navbar-nav">
+                       <li><a href="#">stephanj - 2015</a></li>
+                       <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                           <ul class="dropdown-menu" role="menu">
+                               <li><a href="#">Action</a></li>
+                               <li><a href="#">Another action</a></li>
+                               <li><a href="#">Something else here</a></li>
+                               <li class="divider"></li>
+                               <li><a href="#">Separated link</a></li>
+                           </ul>
+                       </li>
+                   </ul>
+               </div><!-- /.navbar-collapse -->
+           </div><!-- /.container-fluid -->
+       </nav>
+       <script src="js/app.js"></script>
+       </body>
+       </html>
+   
 	```
+	
+     **************
+    
+24.  The next step is to expand the **gulpfile.js** to include Bootstrap, Bootswatch and
+     jQuery.  This is the new **gulpfile.js** file.  Notice the call to the CSS file called 
+     **css/app.css** and the Javascript file called **js/app.js**
+  
+
 
 22.  In the **resources/assests/app.less** file add the imports
 	```
