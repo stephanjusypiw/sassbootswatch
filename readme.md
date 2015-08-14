@@ -24,7 +24,7 @@ in the locations:
 Note:   I am assuming that you have installed **node**, **gulp** and **bower** on your dev machine.
         Here we go.....
 
-1. In the root directory of your Laravel 5 application type the following at the command prompt: 
+1. In the root directory of your Laravel 5.1.* application type the following at the command prompt: 
 	```
 	npm install
     ```
@@ -35,13 +35,14 @@ Note:   I am assuming that you have installed **node**, **gulp** and **bower** o
 	```
 	sudo npm install
     ```
-   (Note:  type **npm -v** to find the current version of current version of node)
+   (Note:  type **npm -v** to find the current version of node)
    
    **************
  
 2.  If you look at your Laravel 5.1.* directory structure, you will now see a new folder under
  	the root folder called **node_modules**.  
- 	You will see a hidden **.bin**, **gulp** and **laravel-elixir** folders.
+ 	You will see a hidden **.bin**, **gulp** and **laravel-elixir** folders in the **node_modules**
+ 	folder.
  	
  	**************
 
