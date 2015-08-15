@@ -84,7 +84,7 @@ Note:   I am assuming that you have installed **node**, **gulp** and **bower** o
    
    **************
    
-6. In the root folder of your application initialise bower with the following at the command prompt:
+6. In the root folder of your application initialise **bower** with the following at the command prompt:
    ```
    bower init
    ```
@@ -94,7 +94,8 @@ Note:   I am assuming that you have installed **node**, **gulp** and **bower** o
    
    **************
 
-7. Create a **.bowerrc** at the root of your project and put the following code in the **.bowerc** file:
+7. Create a **.bowerrc** int the root folder of your project and put the following 
+   code in the **.bowerc** file:
 	```
 	{
 		"directory": "vendor/bower_components"
@@ -135,7 +136,7 @@ Note:   I am assuming that you have installed **node**, **gulp** and **bower** o
 	
     **************
     
-11. Install **bootswatch-sass** in the root of your application. 
+11. To install **bootswatch-sass** in the root of your application. 
     Type the following at the command prompt:
 	```	
 	bower install bootswatch-sass --save
@@ -221,7 +222,7 @@ Note:   I am assuming that you have installed **node**, **gulp** and **bower** o
     
 23.  I am assuming that you have created a HomeStead Virtual Machine and
      configured the necessary files so that you can view your application's home page using
-     directory using a browser.
+     a browser.  Or are using **Xampp**, **Wamp**, **MAMP** or even **php artisan serve**.
 
      Let's replace the default **welcome.blade.php** file with the code below to see
      **bootstrap** and **bootswatch** working.  (It won't work at this stage, but we will get
@@ -328,7 +329,7 @@ Note:   I am assuming that you have installed **node**, **gulp** and **bower** o
      
 26.  In the **resources/assests/app.scss** file add the imports for **bootstrap** and
      **bootswatch**.
-     The order of the imports is REALLY IMPORTANT otherwise the **bootswatch** theme won't work.
+     The order of the imports is **REALLY IMPORTANT** otherwise the **bootswatch** theme won't work.
 	
 	```
 	// first import bootstrap variable
@@ -355,7 +356,7 @@ Note:   I am assuming that you have installed **node**, **gulp** and **bower** o
      gulp
      ```
 
-28.  Refresh the home page of your application to see the bootswatch COSMO theme
+28.  Refresh the home page of your application to see the **Bootswatch COSMO** theme
      being used on the Navigation Bar.
      
      **************
